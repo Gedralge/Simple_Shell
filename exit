@@ -1,0 +1,6 @@
+exit: exit [n]
+Exit the shell.
+
+Exits the shell with a status of N. if N is omitted, the exit status
+is that of last command executed.
+
