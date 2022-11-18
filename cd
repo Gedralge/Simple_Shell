@@ -1,0 +1,17 @@
+cd: cd [-] [dir]
+change the shell working directory.
+
+change the current working directory to DIR. The default DIR is the value of the
+Home shell variable.
+
+If the directory is not found, and the shell option 'cdable_vars' is set,
+the word is assumed to be a variable name. if that variable has a value,
+its value is used for DIR.
+
+options:
+ (-)  redirectthe parrent work directory to the old parent
+work directory an enviroment variable OLDPWD
+
+Exit Status:
+Return 0 if the directory is changed, and if $PWD is set successfully,
+negative number otherwise.
